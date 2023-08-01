@@ -1,6 +1,4 @@
-# Simplefolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobidev/simplefolio?color=blue)](https://github.com/cobidev/simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobidev/simplefolio) ![GitHub forks](https://img.shields.io/github/forks/cobidev/simplefolio)
-
-## A minimal portfolio template for Developers!
+# My Portfolio
 
 <h2 align="center">
   <img src="https://github.com/cobidev/gatsby-simplefolio/blob/master/examples/example.gif" alt="Simplefolio" width="600px" />
@@ -16,16 +14,6 @@
 ⚡️ Valid HTML5 & CSS3\
 ⚡️ Optimized with Parcel\
 ⚡️ Well organized documentation
-
-To view the demo: **[click here](https://the-simplefolio.netlify.app/)**
-
----
-
-## Why do you need a portfolio? ☝️
-
-- Professional way to showcase your work
-- Increases your visibility and online presence
-- Shows you’re more than just a resume
 
 ## Getting Started 🚀
 
