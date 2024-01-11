@@ -1,12 +1,13 @@
 import Container from "../Container";
 import Categories from "./Categories";
 import Image from "next/image"
+import YoutubeEmbed from "../Video";
 
 
 
 const Navbar = () => {
   return (
-    <div className="fixed w-full bg-white z-10 shadow-sm">
+    <div className="fixed w-full  z-10 shadow-sm">
     <div className="py-4 border-[1px]">
         <Container>
             <div className="
@@ -20,16 +21,22 @@ const Navbar = () => {
             >
               <Image
         alt="sam"
-        className="hidden md:block cursor-pointer"
+        className="cursor-pointer"
         height="200"
         width="200"
         src="/image/sam.jpeg" 
     />
+    
+      <div className="flex bg-white">
+      </div>
+    
             </div>
+          
         </Container>
         </div>
         <Categories />
-    </div>    )
+    </div>    
+    )
 }
 
 export default Navbar

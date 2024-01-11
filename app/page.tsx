@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import Container  from './components/Container'
+import YoutubeEmbed from './components/Video'
 
 export default function Home() {
   return (
 
     <Container>
 
-      <div>page.tsx</div>
-
+      <div className=''>page.tsx</div>
+      
 
     </Container> 
   )
