@@ -4,6 +4,8 @@ import Container from './components/Container'
 import Navbar from './components/navbar/Navbar'
 import YoutubeEmbed from './components/Video'
 import './globals.css'
+import Blue from './components/blue'
+import Hero from './components/Hero'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,9 +24,8 @@ export default function RootLayout({
       <body className={inter.className}>
 
 
+        <Hero/>
 
-        <Navbar />
-          
         
         {children}
         </body>

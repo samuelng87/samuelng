@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.1",
     "devicon": "^2.15.1",
     "next": "14.0.4",
     "query-string": "^8.1.0",
@@ -34,6 +35,6 @@
     "css": "css"
   },
   "editor.quickSuggestions": {
-      "strings": true
-}
+    "strings": true
+  }
 }
