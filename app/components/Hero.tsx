@@ -35,7 +35,7 @@ const HeroSection = () => {
         >
           Hi, my name is <span className="">Samuel</span>
           <br />
-          I'm a Frontend Developer.
+          I&apos;m a Frontend Developer.
         </h1>
         <p className="
         hero-cta 
