@@ -1,0 +1,60 @@
+.skills-wrapper {
+  padding: 2rem 0;
+}
+
+.skills-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.skills-slider__container {
+  display: flex;
+  animation: slideSkills 45s linear infinite;
+  width: fit-content;
+  padding: 2rem 0;
+}
+
+/* Pause animation on hover */
+.skills-slider:hover .skills-slider__container {
+  animation-play-state: paused;
+}
+
+.skills-badge {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 0.8rem 1.5rem;
+  margin: 0 1rem;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  font-size: 2rem;
+}
+
+.skills-badge:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  color: #808080;
+}
+
+@keyframes slideSkills {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Duplicate badges for seamless looping */
+.skills-slider__container span {
+  margin-right: 1rem;
+}
+
+/* Fix for ScrollReveal hiding */
+.sr .skills-slider,
+.sr .skills-slider__container {
+  visibility: visible !important;
+} 
