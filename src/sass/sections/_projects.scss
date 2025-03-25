@@ -47,6 +47,45 @@
       & p > a {
         color: $secondary-color;
       }
+      
+      .project-description {
+        @include respond(phone) {
+          max-height: 150px;
+          overflow: hidden;
+          position: relative;
+          transition: max-height 0.5s ease;
+          
+          &.expanded {
+            max-height: 1000px;
+          }
+          
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+            pointer-events: none;
+          }
+        }
+      }
+      
+      .read-more-btn {
+        display: none;
+        background: none;
+        border: none;
+        color: $primary-color;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 5px 0;
+        margin-top: 10px;
+        
+        @include respond(phone) {
+          display: block;
+        }
+      }
     }
 
     &__image {
@@ -60,12 +99,23 @@
 
       & .thumbnail {
         border: none;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        transition: all 0.2s ease-out;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35), 0 10px 15px rgba(0, 0, 0, 0.25);
+        transition: all 0.3s ease-out;
         transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
           0.5s box-shadow,
           0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+
+        &:hover {
+          transform: scale(1.03) translateY(-5px);
+          box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4), 0 15px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .img-fluid {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
 
         @include respond(phone) {
           border: 1px solid $light-grey;

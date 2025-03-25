@@ -21,3 +21,21 @@ initSkillsAnimation();
 
 // SKILLS
 // sr.reveal('.skills-wrapper', srConfig());
+
+// Project descriptions Read More/Less functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const readMoreButtons = document.querySelectorAll('.read-more-btn');
+  
+  readMoreButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const description = this.previousElementSibling;
+      description.classList.toggle('expanded');
+      
+      if (description.classList.contains('expanded')) {
+        this.textContent = 'Read Less';
+      } else {
+        this.textContent = 'Read More';
+      }
+    });
+  });
+});
