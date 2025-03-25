@@ -38,4 +38,19 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+  
+  // About section Read More/Less functionality
+  const aboutReadMoreButton = document.querySelector('.about-read-more-btn');
+  if (aboutReadMoreButton) {
+    aboutReadMoreButton.addEventListener('click', function() {
+      const aboutText = this.previousElementSibling;
+      aboutText.classList.toggle('expanded');
+      
+      if (aboutText.classList.contains('expanded')) {
+        this.textContent = 'Read Less';
+      } else {
+        this.textContent = 'Read More';
+      }
+    });
+  }
 });
