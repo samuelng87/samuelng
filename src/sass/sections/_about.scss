@@ -48,7 +48,7 @@
       }
 
       &-text {
-        text-align: left;
+        text-align: justify;
 
         @include respond(tab-port) {
           text-align: left;
@@ -59,7 +59,7 @@
           font-weight: 400;
           color: $dark-blue-text;
         }
-        
+
         &.collapsible {
           @include respond(phone) {
             max-height: 250px;
@@ -67,11 +67,11 @@
             position: relative;
             transition: max-height 0.5s ease;
             margin-bottom: 10px;
-            
+
             &.expanded {
               max-height: 2000px;
             }
-            
+
             &::after {
               content: "";
               position: absolute;
@@ -79,13 +79,17 @@
               left: 0;
               width: 100%;
               height: 70px;
-              background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--color-primary));
+              background: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0),
+                var(--color-primary)
+              );
               pointer-events: none;
             }
           }
         }
       }
-      
+
       .about-read-more-btn {
         display: none;
         background: none;
@@ -97,7 +101,7 @@
         margin-bottom: 20px;
         text-align: right;
         width: 100%;
-        
+
         @include respond(phone) {
           display: block;
         }
